@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang ="es">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Stay Safe for What´s App</h1>
-    <p>En caso de sentirte amenzada envia y recibe mensajes ocultos a una persona de confianza, Stay safe utiliza la plataforma de What's App para enviar los mensajes</p>
-    <!-- Pido al usuario ingresar el texto que desea codificar o descodificar-->
-    <input type="text" name="Ingresa el mensaje" id="" size="25">
+     
+<header class="header"> <h1>Stacy 💛 </h1> </header>
+
+<section class="fondo">
+      <p>Bienvenido a tu asistente Stacy 💛 Stay Safe. Stacy te ayuda a codificar y descodificar mensajes de texto
+        utilizando tu e-mail. Stacy alerta a tus contactos cuando te sientas amenzada. Envia mensajes
+        que solo tu y tus amigos con asistente Stacy podrán leer.</p> 
+    <img src="image/operadora2.png" alt="Stacy" width="110" height="90">
     <br>
-    <!-- Pongo 2 botones Encriptar o desencriptar-->
-    <button type="submit">Encriptar</button>
-    <br>
-    <button type="submit">Desencriptar</button>
-    <br>
-    Selecciona un numero de desplazamiento
-    <input type="text">
-    </div>
+    
+    <!-- <form id="Display2"> -->
+        <h2>Ingresa el mensaje:</h2> 
+        <p>Por favor no incluyas espacios ni caracteres especiales:</p>
+        <input type="text" id="texto" placeholder="Ingresa tu mensaje"><br>
+        <input type="number" id="offset" placeholder="Nivel de seguridad" min="1" max="99"><br>
+        <button id="Offencode" class="button2">Encriptar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="Offdecode" class="button2">Desencriptar</button> <br>
+        
+      <!-- </form> -->
+      <br>
+   
+<!--<div id="Display3">-->
+   <h2>Aqui esta tu mensaje:</h2>
+ <p id="Resultado"></p>
+<!--</div>-->
+  </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+ 
   </body>
 </html>
