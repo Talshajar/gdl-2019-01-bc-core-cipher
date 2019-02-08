@@ -5,34 +5,37 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
-     
-<header class="header"> <h1>Stacy 💛 </h1> </header>
-
-<section class="fondo">
-      <p>Bienvenido a tu asistente Stacy 💛 Stay Safe. Stacy te ayuda a codificar y descodificar mensajes de texto
+   <header class="header"> 
+     <h1>Stacy 💛 </h1> 
+   </header>
+   
+   <section class="back">
+     <div id="screen1">
+        <p>Bienvenido a tu asistente Stacy 💛 Stay Safe. Stacy te ayuda a codificar y descodificar mensajes de texto
         utilizando tu e-mail. Stacy alerta a tus contactos cuando te sientas amenzada. Envia mensajes
         que solo tu y tus amigos con asistente Stacy podrán leer.</p> 
-    <img src="image/operadora2.png" alt="Stacy" width="110" height="90">
-    <br>
-    
-    <!-- <form id="Display2"> -->
-        <h2>Ingresa el mensaje:</h2> 
-        <p>Por favor no incluyas espacios ni caracteres especiales:</p>
-        <input type="text" id="texto" placeholder="Ingresa tu mensaje"><br>
+        <img src="image/operadora2.png" alt="Stacy" width="110" height="90"><br>
+     <h2>Ingresa el mensaje y elige un nivel de seguridad de dos dígitos:</h2> 
+        <p>Por favor no incluyas espacios ni caracteres especiales</p>
+        <input type="text" id="text" placeholder="Ingresa tu mensaje" ><br>
         <input type="number" id="offset" placeholder="Nivel de seguridad" min="1" max="99"><br>
-        <button id="Offencode" class="button2">Encriptar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="Offdecode" class="button2">Desencriptar</button> <br>
-        
-      <!-- </form> -->
-      <br>
+        <button id="Offencode" class="button2">Encriptar</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="Offdecode" class="button2">Desencriptar</button> <br><br>
+      </div>
+
+        <div id="screen2">
+     <h2>Aqui esta tu mensaje:</h2>
+        <p id="result"></p><br>
+        <p>Envia tu mensaje por correo:</p>
+        <a href="mailto:webmaster@example.com"><img src="image/email.png" alt="email" width="110" height="90"></a><br>
+           <button id="Refresh" class="button2">Volver a empezar</button>
+       </div>
+    </section>
    
-<!--<div id="Display3">-->
-   <h2>Aqui esta tu mensaje:</h2>
- <p id="Resultado"></p>
-<!--</div>-->
-  </section>
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
+      <script src="index.js"></script>
  
-  </body>
+   </body>
 </html>

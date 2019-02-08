@@ -1,10 +1,10 @@
 window.cipher = {
   
-  encode: function (offset,texto){ 
+  encode: function (offset,text){ 
     let mensaje = ("");
-    for (let i = 0; i < texto.length; i++){
-      texto[i].charCodeAt();
-      let posicion =((texto[i].charCodeAt()-65+offset)%26+65);
+    for (let i = 0; i < text.length; i++){
+      text[i].charCodeAt();
+      let posicion =((text[i].charCodeAt()-65+offset)%26+65);
       let nLetra = String.fromCharCode (posicion);
       mensaje= mensaje+nLetra;
     
@@ -12,11 +12,11 @@ window.cipher = {
     return mensaje;
   },
   
-   decode: function (offset,texto){ 
+   decode: function (offset,text){ 
     let mensaje = ("");
-    for (let i = 0; i < texto.length; i++){
-    texto[i].charCodeAt();
-    let posicion =((texto[i].charCodeAt()+65-offset)%26+65);
+    for (let i = 0; i < text.length; i++){
+    text[i].charCodeAt();
+    let posicion =((text[i].charCodeAt()+65-offset)%26+65);
     let nLetra = String.fromCharCode (posicion);
     mensaje= mensaje+nLetra;
     
